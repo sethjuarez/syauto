@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Streamyard Keyboard Shortcuts
 // @namespace    http://streamyard.com
-// @downloadUrl  https://github.com/sethjuarez/syauto/blob/main/streamyard_hotkeys.js
-// @updateUrl    https://github.com/sethjuarez/syauto/blob/main/streamyard_hotkeys.js
+// @downloadUrl  https://raw.githubusercontent.com/sethjuarez/syauto/main/streamyard_hotkeys.js
+// @updateUrl    https://raw.githubusercontent.com/sethjuarez/syauto/main/streamyard_hotkeys.js
 // @website      https://github.com/sethjuarez/syauto
 // @version      0.13
 // @description  Keyboard shortcuts for streamyard
