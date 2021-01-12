@@ -1,98 +1,366 @@
 {
-  "version": 0.17,
+  "version": 0.19,
   "mappings": [
     {
-      "name": "Mute/Unmuted",
-      "element": "button[class*=\"ControlButton__WrapButton\"][aria-label$=\"microphone\"]",
-      "keys": "^!b"
-    },
-    {
-      "name": "Camera Mute/Unmute",
-      "element": "button[class*=\"ControlButton__WrapButton\"][aria-label$=\"camera\"]",
-      "keys": "^!v"
-    },
-    {
-      "name": "Solo layout",
+      "name": "Solo",
       "element": "button[class*=\" LayoutButton__WrapButton\"]",
       "index": 0,
-      "keys": "!1"
+      "keys": "^!1",
+      "streamdeck": {
+        "row": 1,
+        "col": 1,
+        "image": "images/solo.png"
+      }
     },
     {
-      "name": "Thin layout",
+      "name": "Thin",
       "element": "button[class*=\" LayoutButton__WrapButton\"]",
       "index": 1,
-      "keys": "!2"
+      "keys": "^!2",
+      "streamdeck": {
+        "row": 1,
+        "col": 2,
+        "image": "images/thin.png"
+      }
     },
     {
-      "name": "Group layout",
+      "name": "Group",
       "element": "button[class*=\" LayoutButton__WrapButton\"]",
       "index": 2,
-      "keys": "!3"
+      "keys": "^!3",
+      "streamdeck": {
+        "row": 1,
+        "col": 3,
+        "image": "images/group.png"
+      }
     },
     {
-      "name": "Leader layout",
+      "name": "Leader",
       "element": "button[class*=\" LayoutButton__WrapButton\"]",
       "index": 3,
-      "keys": "!4"
+      "keys": "^!4",
+      "streamdeck": {
+        "row": 1,
+        "col": 4,
+        "image": "images/leader.png"
+      }
     },
     {
-      "name": "Small screen layout",
+      "name": "Small",
       "element": "button[class*=\" LayoutButton__WrapButton\"]",
       "index": 4,
-      "keys": "!5"
+      "keys": "^!5",
+      "streamdeck": {
+        "row": 1,
+        "col": 5,
+        "image": "images/small.png"
+      }
     },
     {
-      "name": "Large screen layout",
+      "name": "Large",
       "element": "button[class*=\" LayoutButton__WrapButton\"]",
       "index": 5,
-      "keys": "!6"
+      "keys": "^!6",
+      "streamdeck": {
+        "row": 1,
+        "col": 6,
+        "image": "images/large.png"
+      }
     },
     {
-      "name": "Full screen layout",
+      "name": "Full",
       "element": "button[class*=\" LayoutButton__WrapButton\"]",
       "index": 6,
-      "keys": "!7"
+      "keys": "^!7",
+      "streamdeck": {
+        "row": 1,
+        "col": 7,
+        "image": "images/full.png"
+      }
     },
     {
-      "name": "Play Video",
-      "path": ["#broadcast-aside-tab-brand"],
-      "element": "[aria-label=\"Countdown overlay\"]",
-      "keys": "^!p"
+      "name": "Names",
+      "path": "#broadcast-aside-tab-brand",
+      "element": "input[class^=\"Switch__Input\"]",
+      "keys": "^!8",
+      "streamdeck": {
+        "row": 1,
+        "col": 8,
+        "image": "images/names.png"
+      }
     },
     {
-      "name": "Show 1st banner",
+      "name": "Solo 1",
+      "element": "button[aria-label$=\"layout\"][class*=\"CardLayoutButton__WrapButton\"]",
+      "index": 0,
+      "keys": "^!q",
+      "streamdeck": {
+        "row": 2,
+        "col": 1,
+        "image": "images/solo_card.png"
+      }
+    },
+    {
+      "name": "Solo 2",
+      "element": "button[aria-label$=\"layout\"][class*=\"CardLayoutButton__WrapButton\"]",
+      "index": 1,
+      "keys": "^!w",
+      "streamdeck": {
+        "row": 2,
+        "col": 2,
+        "image": "images/solo_card.png"
+      }
+    },
+    {
+      "name": "Solo 3",
+      "element": "button[aria-label$=\"layout\"][class*=\"CardLayoutButton__WrapButton\"]",
+      "index": 2,
+      "keys": "^!e",
+      "streamdeck": {
+        "row": 2,
+        "col": 3,
+        "image": "images/solo_card.png"
+      }
+    },
+    {
+      "name": "Solo 4",
+      "element": "button[aria-label$=\"layout\"][class*=\"CardLayoutButton__WrapButton\"]",
+      "index": 3,
+      "keys": "^!r",
+      "streamdeck": {
+        "row": 2,
+        "col": 4,
+        "image": "images/solo_card.png"
+      }
+    },
+    {
+      "name": "Solo 5",
+      "element": "button[aria-label$=\"layout\"][class*=\"CardLayoutButton__WrapButton\"]",
+      "index": 4,
+      "keys": "^!t",
+      "streamdeck": {
+        "row": 2,
+        "col": 5,
+        "image": "images/solo_card.png"
+      }
+    },
+    {
+      "name": "Chat",
+      "element": "#broadcast-aside-tab-chat",
+      "keys": "^!y",
+      "streamdeck": {
+        "row": 2,
+        "col": 6,
+        "image": "images/chat.png"
+      }
+    },
+    {
+      "name": "Camera",
+      "element": "button[class*=\"ControlButton__WrapButton\"][aria-label$=\"camera\"]",
+      "keys": "^!0",
+      "streamdeck": {
+        "row": 2,
+        "col": 7,
+        "image": "images/camera.png"
+      }
+    },
+    {
+      "name": "Audio",
+      "element": "button[class*=\"ControlButton__WrapButton\"][aria-label$=\"microphone\"]",
+      "keys": "^!9",
+      "streamdeck": {
+        "row": 2,
+        "col": 8,
+        "image": "images/audio.png"
+      }
+    },
+    {
+      "name": "Banners",
+      "element": "#broadcast-aside-tab-banners",
+      "keys": "^!u",
+      "streamdeck": {
+        "row": 3,
+        "col": 1,
+        "image": "images/banners.png"
+      }
+    },
+    {
+      "name": "Banner 1",
       "path": "#broadcast-aside-tab-banners",
       "element": "button[class*=\"Banner__CoverButton\"]",
       "index": 0,
-      "keys": "^!q"
+      "keys": "^!i",
+      "streamdeck": {
+        "row": 3,
+        "col": 2,
+        "image": "images/banner.png"
+      }
     },
     {
-      "name": "Show 2nd banner",
+      "name": "Banner 2",
       "path": "#broadcast-aside-tab-banners",
       "element": "button[class*=\"Banner__CoverButton\"]",
       "index": 1,
-      "keys": "^!w"
+      "keys": "^!o",
+      "streamdeck": {
+        "row": 3,
+        "col": 3,
+        "image": "images/banner.png"
+      }
     },
     {
-      "name": "Show 3rd banner",
+      "name": "Banner 3",
       "path": "#broadcast-aside-tab-banners",
       "element": "button[class*=\"Banner__CoverButton\"]",
       "index": 2,
-      "keys": "^!e"
+      "keys": "^!p",
+      "streamdeck": {
+        "row": 3,
+        "col": 4,
+        "image": "images/banner.png"
+      }
     },
     {
-      "name": "Show 4th banner",
+      "name": "Banner 4",
       "path": "#broadcast-aside-tab-banners",
       "element": "button[class*=\"Banner__CoverButton\"]",
       "index": 3,
-      "keys": "^!r"
+      "keys": "^!a",
+      "streamdeck": {
+        "row": 3,
+        "col": 5,
+        "image": "images/banner.png"
+      }
     },
     {
-      "name": "Show 5th banner",
+      "name": "Banner 5",
       "path": "#broadcast-aside-tab-banners",
       "element": "button[class*=\"Banner__CoverButton\"]",
       "index": 4,
-      "keys": "^!t"
+      "keys": "^!s",
+      "streamdeck": {
+        "row": 3,
+        "col": 6,
+        "image": "images/banner.png"
+      }
+    },
+    {
+      "name": "Banner 6",
+      "path": "#broadcast-aside-tab-banners",
+      "element": "button[class*=\"Banner__CoverButton\"]",
+      "index": 5,
+      "keys": "^!d",
+      "streamdeck": {
+        "row": 3,
+        "col": 7,
+        "image": "images/banner.png"
+      }
+    },
+    {
+      "name": "Banner 7",
+      "path": "#broadcast-aside-tab-banners",
+      "element": "button[class*=\"Banner__CoverButton\"]",
+      "index": 6,
+      "keys": "^!f",
+      "streamdeck": {
+        "row": 3,
+        "col": 8,
+        "image": "images/banner.png"
+      }
+    },
+    {
+      "name": "Brand",
+      "element": "#broadcast-aside-tab-brand",
+      "keys": "^!g",
+      "streamdeck": {
+        "row": 4,
+        "col": 1,
+        "image": "images/brand.png"
+      }
+    },
+    {
+      "name": "Overlay 1",
+      "path": "#broadcast-aside-tab-brand",
+      "element": "button[class*=\"BrandAsset__WrapButton\"][aria-label$=\"overlay\"]",
+      "index": 0,
+      "keys": "^!m",
+      "streamdeck": {
+        "row": 4,
+        "col": 2,
+        "image": "images/overlay.png"
+      }
+    },
+    {
+      "name": "Overlay 2",
+      "path": "#broadcast-aside-tab-brand",
+      "element": "button[class*=\"BrandAsset__WrapButton\"][aria-label$=\"overlay\"]",
+      "index": 1,
+      "keys": "^!j",
+      "streamdeck": {
+        "row": 4,
+        "col": 3,
+        "image": "images/overlay.png"
+      }
+    },
+    {
+      "name": "Overlay 3",
+      "path": "#broadcast-aside-tab-brand",
+      "element": "button[class*=\"BrandAsset__WrapButton\"][aria-label$=\"overlay\"]",
+      "index": 2,
+      "keys": "^!k",
+      "streamdeck": {
+        "row": 4,
+        "col": 4,
+        "image": "images/overlay.png"
+      }
+    },
+    {
+      "name": "Overlay 4",
+      "path": "#broadcast-aside-tab-brand",
+      "element": "button[class*=\"BrandAsset__WrapButton\"][aria-label$=\"overlay\"]",
+      "index": 3,
+      "keys": "^!l",
+      "streamdeck": {
+        "row": 4,
+        "col": 5,
+        "image": "images/overlay.png"
+      }
+    },
+    {
+      "name": "Overlay 5",
+      "path": "#broadcast-aside-tab-brand",
+      "element": "button[class*=\"BrandAsset__WrapButton\"][aria-label$=\"overlay\"]",
+      "index": 4,
+      "keys": "^!z",
+      "streamdeck": {
+        "row": 4,
+        "col": 6,
+        "image": "images/overlay.png"
+      }
+    },
+    {
+      "name": "Overlay 6",
+      "path": "#broadcast-aside-tab-brand",
+      "element": "button[class*=\"BrandAsset__WrapButton\"][aria-label$=\"overlay\"]",
+      "index": 5,
+      "keys": "^!x",
+      "streamdeck": {
+        "row": 4,
+        "col": 7,
+        "image": "images/overlay.png"
+      }
+    },
+    {
+      "name": "Overlay 7",
+      "path": "#broadcast-aside-tab-brand",
+      "element": "button[class*=\"BrandAsset__WrapButton\"][aria-label$=\"overlay\"]",
+      "index": 6,
+      "keys": "^!c",
+      "streamdeck": {
+        "row": 4,
+        "col": 8,
+        "image": "images/overlay.png"
+      }
     }
   ]
 }

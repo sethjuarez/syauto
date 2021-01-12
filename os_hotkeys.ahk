@@ -1,110 +1,85 @@
-#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
-#Warn  ; Enable warnings to assist with detecting common errors.
-SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
-; SendMode Event
 SetTitleMatchMode, 2 ; 2 = a partial match on the title
- 
 ;shift: +
 ;control: ^
 ;alt: !
 
 ;<<
-^!B::
+^!1::
 WinGet, winid, ID, A
 IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
 {
     WinActivate
-    Send, ^!B  
+    Send, ^!1  
     WinActivate ahk_id %winid%
 }
 return
 
-^!V::
+^!2::
 WinGet, winid, ID, A
 IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
 {
     WinActivate
-    Send, ^!V  
+    Send, ^!2  
     WinActivate ahk_id %winid%
 }
 return
 
-!1::
+^!3::
 WinGet, winid, ID, A
 IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
 {
     WinActivate
-    Send, !1  
+    Send, ^!3  
     WinActivate ahk_id %winid%
 }
 return
 
-!2::
+^!4::
 WinGet, winid, ID, A
 IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
 {
     WinActivate
-    Send, !2  
+    Send, ^!4  
     WinActivate ahk_id %winid%
 }
 return
 
-!3::
+^!5::
 WinGet, winid, ID, A
 IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
 {
     WinActivate
-    Send, !3  
+    Send, ^!5  
     WinActivate ahk_id %winid%
 }
 return
 
-!4::
+^!6::
 WinGet, winid, ID, A
 IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
 {
     WinActivate
-    Send, !4  
+    Send, ^!6  
     WinActivate ahk_id %winid%
 }
 return
 
-!5::
+^!7::
 WinGet, winid, ID, A
 IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
 {
     WinActivate
-    Send, !5  
+    Send, ^!7  
     WinActivate ahk_id %winid%
 }
 return
 
-!6::
+^!8::
 WinGet, winid, ID, A
 IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
 {
     WinActivate
-    Send, !6  
-    WinActivate ahk_id %winid%
-}
-return
-
-!7::
-WinGet, winid, ID, A
-IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
-{
-    WinActivate
-    Send, !7  
-    WinActivate ahk_id %winid%
-}
-return
-
-^!P::
-WinGet, winid, ID, A
-IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
-{
-    WinActivate
-    Send, ^!P  
+    Send, ^!8  
     WinActivate ahk_id %winid%
 }
 return
@@ -155,6 +130,196 @@ IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
 {
     WinActivate
     Send, ^!T  
+    WinActivate ahk_id %winid%
+}
+return
+
+^!Y::
+WinGet, winid, ID, A
+IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
+{
+    WinActivate
+    Send, ^!Y  
+    WinActivate ahk_id %winid%
+}
+return
+
+^!0::
+WinGet, winid, ID, A
+IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
+{
+    WinActivate
+    Send, ^!0  
+    WinActivate ahk_id %winid%
+}
+return
+
+^!9::
+WinGet, winid, ID, A
+IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
+{
+    WinActivate
+    Send, ^!9  
+    WinActivate ahk_id %winid%
+}
+return
+
+^!U::
+WinGet, winid, ID, A
+IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
+{
+    WinActivate
+    Send, ^!U  
+    WinActivate ahk_id %winid%
+}
+return
+
+^!I::
+WinGet, winid, ID, A
+IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
+{
+    WinActivate
+    Send, ^!I  
+    WinActivate ahk_id %winid%
+}
+return
+
+^!O::
+WinGet, winid, ID, A
+IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
+{
+    WinActivate
+    Send, ^!O  
+    WinActivate ahk_id %winid%
+}
+return
+
+^!P::
+WinGet, winid, ID, A
+IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
+{
+    WinActivate
+    Send, ^!P  
+    WinActivate ahk_id %winid%
+}
+return
+
+^!A::
+WinGet, winid, ID, A
+IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
+{
+    WinActivate
+    Send, ^!A  
+    WinActivate ahk_id %winid%
+}
+return
+
+^!S::
+WinGet, winid, ID, A
+IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
+{
+    WinActivate
+    Send, ^!S  
+    WinActivate ahk_id %winid%
+}
+return
+
+^!D::
+WinGet, winid, ID, A
+IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
+{
+    WinActivate
+    Send, ^!D  
+    WinActivate ahk_id %winid%
+}
+return
+
+^!F::
+WinGet, winid, ID, A
+IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
+{
+    WinActivate
+    Send, ^!F  
+    WinActivate ahk_id %winid%
+}
+return
+
+^!G::
+WinGet, winid, ID, A
+IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
+{
+    WinActivate
+    Send, ^!G  
+    WinActivate ahk_id %winid%
+}
+return
+
+^!M::
+WinGet, winid, ID, A
+IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
+{
+    WinActivate
+    Send, ^!M  
+    WinActivate ahk_id %winid%
+}
+return
+
+^!J::
+WinGet, winid, ID, A
+IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
+{
+    WinActivate
+    Send, ^!J  
+    WinActivate ahk_id %winid%
+}
+return
+
+^!K::
+WinGet, winid, ID, A
+IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
+{
+    WinActivate
+    Send, ^!K  
+    WinActivate ahk_id %winid%
+}
+return
+
+^!L::
+WinGet, winid, ID, A
+IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
+{
+    WinActivate
+    Send, ^!L  
+    WinActivate ahk_id %winid%
+}
+return
+
+^!Z::
+WinGet, winid, ID, A
+IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
+{
+    WinActivate
+    Send, ^!Z  
+    WinActivate ahk_id %winid%
+}
+return
+
+^!X::
+WinGet, winid, ID, A
+IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
+{
+    WinActivate
+    Send, ^!X  
+    WinActivate ahk_id %winid%
+}
+return
+
+^!C::
+WinGet, winid, ID, A
+IfWinExist, StreamYard ahk_class Chrome_WidgetWin_1
+{
+    WinActivate
+    Send, ^!C  
     WinActivate ahk_id %winid%
 }
 return
